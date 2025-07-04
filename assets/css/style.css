@@ -13,3 +13,182 @@
   .font-pirate {
     font-family: "Pirata One", cursive;
   }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--op-gold);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Card hover effects */
+  .character-card {
+    transition: all 0.3s ease;
+  }
+  
+  .character-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Level indicator styles */
+  .level-indicator {
+    background: linear-gradient(45deg, var(--op-gold), #fbbf24);
+    background-size: 200% 200%;
+    animation: gradient 2s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Form styles */
+  .form-input:focus {
+    border-color: var(--op-gold);
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background: linear-gradient(45deg, var(--op-gold), #fbbf24);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(45deg, #d97706, var(--op-gold));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(245, 158, 11, 0.3);
+  }
+  
+  /* Loading animation */
+  .loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .font-pirate {
+      font-size: 1.5rem;
+    }
+  
+    .character-card {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Print styles for PDF */
+  @media print {
+    body {
+      background: white !important;
+    }
+  
+    .no-print {
+      display: none !important;
+    }
+  }
+  
+  /* Custom range slider */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-webkit-slider-track {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--op-gold);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="range"]::-moz-range-track {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    background: var(--op-gold);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  /* File upload area */
+  .file-upload-area {
+    border: 2px dashed #cbd5e1;
+    transition: all 0.3s ease;
+  }
+  
+  .file-upload-area:hover {
+    border-color: var(--op-gold);
+    background-color: #fef3c7;
+  }
+  
+  .file-upload-area.dragover {
+    border-color: var(--op-gold);
+    background-color: #fef3c7;
+    transform: scale(1.02);
+  }
+  
