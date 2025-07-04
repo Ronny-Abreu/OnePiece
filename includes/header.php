@@ -76,5 +76,12 @@
         </div>
     <?php endif; ?>
 
+    <?php if(isset($_SESSION['error'])): ?>
+        <div class="container mx-auto px-4 mt-4">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <span class="block sm:inline"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></span>
+            </div>
+        </div>
+    <?php endif; ?>
 
     <main class="container mx-auto px-4 py-8">
