@@ -62,8 +62,21 @@
                     </a>
                 </div>
                 
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
             
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.php" class="block text-white hover:text-op-gold py-2">
+                    <i class="fas fa-home mr-2"></i>Inicio
+                </a>
+                <a href="personaje.php?action=create" class="block text-white hover:text-op-gold py-2">
+                    <i class="fas fa-plus mr-2"></i>Nuevo Personaje
+                </a>
+            </div>
         </div>
     </nav>
 
