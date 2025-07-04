@@ -1,0 +1,15 @@
+/* Custom styles for One Piece theme */
+:root {
+    --op-blue: #1e40af;
+    --op-red: #dc2626;
+    --op-gold: #f59e0b;
+    --op-navy: #1e3a8a;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .font-pirate {
+    font-family: "Pirata One", cursive;
+  }
