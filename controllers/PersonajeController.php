@@ -21,6 +21,7 @@ class PersonajeController {
 
     public function show($id) {
         if($this->personaje->getById($id)) {
+            $personaje = $this->personaje; // Pasa el objeto personaje a la vista
             include 'views/personajes/show.php';
         } else {
             $_SESSION['error'] = "Personaje no encontrado";
@@ -90,6 +91,7 @@ class PersonajeController {
             }
         }
         
+        $personaje = $this->personaje; // Pasa el objeto personaje a la vista
         include 'views/personajes/edit.php';
     }
     //eliminar personaje
