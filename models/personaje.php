@@ -73,7 +73,63 @@ class Personaje {
         return false;
     }
 
+    // Actualizar personaje
+    public function update() {
+        $query = "UPDATE " . $this->table_name . " 
+                  SET nombre=:nombre, color=:color, tipo=:tipo, nivel=:nivel, foto=:foto 
+                  WHERE id=:id";
+        
+        $stmt = $this->conn->prepare($query);
+        
+        // Limpiar datos
+        $this->nombre = htmlspecialchars(strip_tags($this->nombre));
+        $this->color = htmlspecialchars(strip_tags($this->color));
+        $this->tipo = htmlspecialchars(strip_tags($this->tipo));
+        $this->nivel = htmlspecialchars(strip_tags($this->nivel));
+        $this->foto = htmlspecialchars(strip_tags($this->foto));
+        $this->id = htmlspecialchars(strip_tags($this->id));
+        
+        // Bind valores
+        $stmt->bindParam(":nombre", $this->nombre);
+        $stmt->bindParam(":color", $this->color);
+        $stmt->bindParam(":tipo", $this->tipo);
+        $stmt->bindParam(":nivel", $this->nivel);
+        $stmt->bindParam(":foto", $this->foto);
+        $stmt->bindParam(":id", $this->id);
+        
+        if($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
 
+    // Eliminar personaje
+    public function delete() {
+        $query = "DELETE FROM " . $this->table_name . " WHERE id = ?";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(1, $this->id);
+        
+        if($stmt->execute()) {
+            return true;
+        }
+        return false;
+    }
+
+    // Buscar personajes
+    public function search($keywords) {
+        $query = "SELECT * FROM " . $this->table_name . " 
+                  WHERE nombre LIKE ? OR tipo LIKE ? OR color LIKE ? 
+                  ORDER BY created_at DESC";
+        
+        $stmt = $this->conn->prepare($query);
+        $keywords = "%{$keywords}%";
+        $stmt->bindParam(1, $keywords);
+        $stmt->bindParam(2, $keywords);
+        $stmt->bindParam(3, $keywords);
+        $stmt->execute();
+        
+        return $stmt;
+    }
 
     // Obtener estadísticas
     public function getStats() {
