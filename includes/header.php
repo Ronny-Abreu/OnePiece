@@ -70,7 +70,7 @@
     <!-- Messages -->
     <?php if(isset($_SESSION['success'])): ?>
         <div class="container mx-auto px-4 mt-4">
-            <div class="bg-green-100 border border-green-400 text-green-700 px-4" role="alert">
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
                 <span class="block sm:inline"><?php echo $_SESSION['success']; unset($_SESSION['success']); ?></span>
             </div>
         </div>
