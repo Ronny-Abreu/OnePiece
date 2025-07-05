@@ -17,3 +17,6 @@ vendor/sabberworm/php-css-parser/
 vendor/phenx/php-font-lib/
 vendor/masterminds/html5/
 vendor/dompdf/dompdf/
+*.jpg
+*.jpg
+*.jpg
