@@ -109,18 +109,18 @@ include 'includes/header.php';
                     <div class="flex space-x-2">
                         
                         <a href="personaje.php?action=edit&id=<?php echo $personaje['id']; ?>" 
-                           class="flex-1 bg-op-gold text-white text-center py-2 rounded-lg hover:bg-yellow-600 transition-colors">\
+                           class="flex-1 bg-op-gold text-white text-center py-2 rounded-lg hover:bg-yellow-600 transition-colors">
                             <i class="fas fa-edit mr-1"></i>Editar
                         </a>
                         
                         <a href="personaje.php?action=pdf&id=<?php echo $personaje['id']; ?>" 
-                           class="flex-1 bg-green-600 text-white text-center py-2 rounded-lg hover:bg-green-700 transition-colors">\
+                           class="flex-1 bg-green-600 text-white text-center py-2 rounded-lg hover:bg-green-700 transition-colors">
                             <i class="fas fa-file-pdf mr-1"></i>PDF
                         </a>
                         
                         <a href="personaje.php?action=delete&id=<?php echo $personaje['id']; ?>" 
                            onclick="return confirm(\'¿Estás seguro de eliminar este personaje?\')"
-                           class="flex-1 bg-red-600 text-white text-center py-2 rounded-lg hover:bg-red-700 transition-colors">\
+                           class="flex-1 bg-red-600 text-white text-center py-2 rounded-lg hover:bg-red-700 transition-colors">
                             <i class="fas fa-trash mr-1"></i>
                         </a>
                     </div>

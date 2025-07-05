@@ -192,3 +192,23 @@
     transform: scale(1.02);
   }
   
+  /* --- Efectos de Hover para Tarjetas de Personajes --- */
+  #characters-grid-container .character-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: relative; /* Necesario para z-index */
+    z-index: 1; /* Valor inicial */
+  }
+  
+  #characters-grid-container .character-card:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    z-index: 10; 
+    filter: none;
+    opacity: 1;
+  }
+  
+  #characters-grid-container:has(.character-card:hover) .character-card:not(:hover) {
+    filter: blur(2px); /* Ligeramente borroso */
+    opacity: 0.7; 
+  }
+  

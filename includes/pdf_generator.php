@@ -47,7 +47,7 @@ class PDFGenerator {
                 body {
                     font-family: "Roboto", sans-serif;
                     margin: 0;
-                    padding: 20px;
+                    padding: 15px;
                     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
                     color: #333;
                 }
@@ -55,7 +55,7 @@ class PDFGenerator {
                 .card {
                     background: white;
                     border-radius: 20px;
-                    padding: 30px;
+                    padding: 20px;
                     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
                     max-width: 600px;
                     margin: 0 auto;
@@ -64,14 +64,14 @@ class PDFGenerator {
                 
                 .header {
                     text-align: center;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     border-bottom: 3px solid #f59e0b;
-                    padding-bottom: 20px;
+                    padding-bottom: 15px;
                 }
                 
                 .title {
                     font-family: "Pirata One", cursive;
-                    font-size: 36px;
+                    font-size: 30px;
                     color: #1e3a8a;
                     margin: 0;
                     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
@@ -79,13 +79,13 @@ class PDFGenerator {
                 
                 .subtitle {
                     color: #6b7280;
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-top: 5px;
                 }
                 
                 .content {
                     display: flex;
-                    gap: 30px;
+                    gap: 20px;
                     align-items: flex-start;
                 }
                 
@@ -95,8 +95,8 @@ class PDFGenerator {
                 }
                 
                 .character-image {
-                    width: 200px;
-                    height: 200px;
+                    width: 150px;
+                    height: 150px;
                     border-radius: 50%;
                     border: 5px solid #f59e0b;
                     object-fit: cover;
@@ -108,8 +108,8 @@ class PDFGenerator {
                 }
                 
                 .info-item {
-                    margin-bottom: 20px;
-                    padding: 15px;
+                    margin-bottom: 10px;
+                    padding: 10px;
                     background: #f8fafc;
                     border-radius: 10px;
                     border-left: 5px solid #f59e0b;
@@ -118,14 +118,14 @@ class PDFGenerator {
                 .info-label {
                     font-weight: bold;
                     color: #1e3a8a;
-                    font-size: 14px;
+                    font-size: 12px;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     margin-bottom: 5px;
                 }
                 
                 .info-value {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: #374151;
                     font-weight: 500;
                 }
@@ -134,15 +134,15 @@ class PDFGenerator {
                     display: inline-block;
                     background: linear-gradient(45deg, #f59e0b, #fbbf24);
                     color: white;
-                    padding: 8px 16px;
+                    padding: 6px 12px;
                     border-radius: 20px;
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 14px;
                 }
                 
                 .color-indicator {
-                    width: 30px;
-                    height: 30px;
+                    width: 20px;
+                    height: 20px;
                     border-radius: 50%;
                     display: inline-block;
                     border: 3px solid #fff;
@@ -153,8 +153,8 @@ class PDFGenerator {
                 
                 .footer {
                     text-align: center;
-                    margin-top: 30px;
-                    padding-top: 20px;
+                    margin-top: 20px;
+                    padding-top: 15px;
                     border-top: 2px solid #e5e7eb;
                     color: #6b7280;
                     font-size: 12px;
@@ -162,8 +162,8 @@ class PDFGenerator {
                 
                 .pirate-elements {
                     text-align: center;
-                    margin: 20px 0;
-                    font-size: 24px;
+                    margin: 15px 0;
+                    font-size: 20px;
                 }
             </style>
         </head>
