@@ -9,7 +9,7 @@ class PDFGenerator {
     
     public function __construct() {
         $options = new Options();
-        $options->set('defaultFont', 'Arial');
+        $options->set('defaultFont', 'Roboto');
         $options->set('isRemoteEnabled', true);
         $options->set('isHtml5ParserEnabled', true);
         
@@ -42,7 +42,7 @@ class PDFGenerator {
         <head>
             <meta charset="UTF-8">
             <style>
-                @import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@300;400;700&display=swap");
+                /* @import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@300;400;700&display=swap"); */
                 
                 body {
                     font-family: "Roboto", sans-serif;
