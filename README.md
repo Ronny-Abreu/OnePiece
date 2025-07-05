@@ -31,8 +31,7 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/Ronny-Abreu/OnePiece.git # Reemplaza con la URL de tu repositorio
-    cd OnePiece
+    git clone https://github.com/Ronny-Abreu/OnePiece.git
     ```
 
 2.  **Configurar un Servidor Web:**
@@ -75,15 +74,15 @@ Una vez que la instalación esté completa, puedes acceder a la aplicación a tr
     *   `images/`: Imágenes de los personajes y otros activos visuales.
     *   `js/`: Archivos JavaScript para funcionalidades del frontend.
 *   `config/`: Archivos de configuración de la aplicación y la base de datos.
-*   `controllers/`: Lógica de negocio y manejo de solicitudes (por ejemplo, `PersonajeController.php`).
+*   `controllers/`: Lógica de negocio y manejo de solicitudes.
 *   `includes/`: Archivos PHP reutilizables como encabezados y pies de página (`header.php`, `footer.php`). También incluye el generador de PDF (`pdf_generator.php`).
-*   `models/`: Clases que representan las entidades de la base de datos y la lógica de interacción con la DB (por ejemplo, `Personaje.php`).
+*   `models/`: Clases que representan las entidades de la base de datos y la lógica de interacción con la DB.
 *   `scripts/`: Scripts SQL para la base de datos (`database.sql`).
 *   `vendor/`: Dependencias de Composer instaladas.
 *   `views/`: Archivos de vista (HTML/PHP) que definen la interfaz de usuario.
     *   `install/`: Archivos relacionados con la instalación inicial (si aplica).
     *   `personajes/`: Vistas específicas para la gestión de personajes (crear, editar, mostrar, listar).
 *   `index.php`: El punto de entrada principal de la aplicación.
-*   `personaje.php`: Posiblemente un punto de entrada o script específico para operaciones con personajes.
-*   `install.php`: Script de instalación inicial (si aplica).
+*   `personaje.php`: Vista de todos los personajes.
+*   `install.php`: Script de instalación inicial (Asistente de configuración BDD).
 *   `LICENSE`: Archivo de licencia del proyecto.
